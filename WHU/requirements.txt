@@ -1,0 +1,12 @@
+# Training server: PyTorch 1.12.1 + CUDA 11.3, torchvision 0.13.1.
+# Keep the server's preinstalled torch/torchvision; do not upgrade them from
+# this file. The code uses only PyTorch >=1.12 APIs.
+# torch==2.2.2        # NOT for the 1.12.1 + CUDA 11.3 server
+# torchvision==0.17.2 # NOT for the 1.12.1 + CUDA 11.3 server
+
+numpy>=1.21,<2
+Pillow>=8.0
+PyYAML>=5.4
+tqdm>=4.62
+yacs>=0.1.8
+timm>=0.9,<1.1

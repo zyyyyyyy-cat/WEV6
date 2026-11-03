@@ -1,0 +1,212 @@
+{
+  "ag_camera_counts": {
+    "gallery": {
+      "aerial_cam_ge5": 57889,
+      "ground_cam_lt5": 159227,
+      "total": 217116
+    },
+    "query": {
+      "aerial_cam_ge5": 3461,
+      "ground_cam_lt5": 11559,
+      "total": 15020
+    }
+  },
+  "dataset_dir": "WHU-MARS-2337",
+  "filter_gd": false,
+  "modalities": [
+    "RGB",
+    "IR",
+    "Thermal"
+  ],
+  "pkm_coverage": {
+    "K": 4,
+    "all_cross_modal": {
+      "anchors": 12800,
+      "positives": 20098,
+      "positives_per_anchor": 1.57015625,
+      "valid": 9560,
+      "valid_ratio": 0.746875
+    },
+    "n_batches": 200,
+    "per_pair": {
+      "IR\u2013Thermal": {
+        "anchors": 12800,
+        "positives": 6696,
+        "positives_per_anchor": 0.523125,
+        "valid": 6696,
+        "valid_ratio": 0.523125
+      },
+      "RGB\u2013IR": {
+        "anchors": 12800,
+        "positives": 6705,
+        "positives_per_anchor": 0.523828125,
+        "valid": 6705,
+        "valid_ratio": 0.523828125
+      },
+      "RGB\u2013Thermal": {
+        "anchors": 12800,
+        "positives": 6697,
+        "positives_per_anchor": 0.523203125,
+        "valid": 6697,
+        "valid_ratio": 0.523203125
+      }
+    },
+    "pids_per_batch": 16
+  },
+  "raw_id_overlap": {
+    "query_gallery": 1337,
+    "train_gallery": 0,
+    "train_query": 0
+  },
+  "root": "/project/code/data",
+  "splits": {
+    "gallery": {
+      "IR": {
+        "cameras": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "images": 78680,
+        "pids": 1337
+      },
+      "RGB": {
+        "cameras": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "images": 78639,
+        "pids": 1337
+      },
+      "Thermal": {
+        "cameras": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "images": 59797,
+        "pids": 1329
+      },
+      "all_pids": 1337,
+      "raw_pids": 1337
+    },
+    "query": {
+      "IR": {
+        "cameras": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "images": 5275,
+        "pids": 1337
+      },
+      "RGB": {
+        "cameras": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "images": 5254,
+        "pids": 1337
+      },
+      "Thermal": {
+        "cameras": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "images": 4491,
+        "pids": 1329
+      },
+      "all_pids": 1337,
+      "raw_pids": 1337
+    },
+    "train": {
+      "IR": {
+        "cameras": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "images": 76975,
+        "pids": 1000
+      },
+      "RGB": {
+        "cameras": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "images": 77253,
+        "pids": 1000
+      },
+      "Thermal": {
+        "cameras": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "images": 63276,
+        "pids": 1000
+      },
+      "all_pids": 1000,
+      "raw_pids": 1000
+    }
+  },
+  "train_structure": {
+    "camera_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "cameras_per_id_max_mean": 2.444,
+    "cameras_per_id_max_median": 2.0,
+    "cameras_per_id_max_min": 2,
+    "missing_examples": [],
+    "missing_modality_pids": 0,
+    "train_pids": 1000,
+    "zero_examples": [],
+    "zero_image_groups": 0
+  }
+}
